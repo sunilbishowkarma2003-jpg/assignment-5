@@ -1,16 +1,62 @@
 body {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  text-align: center;
+    background: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background: #fff;
+    width: 320px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Hover garda mathi sarchha */
 }
 
 #profile-name {
-  font-size: 32px;
-  color: #e50914;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    text-align: left;
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
 }
 
 .card-info {
-  font-size: 16px;
-  color: #cccccc;
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.contact-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background: #0056b3;
 }
