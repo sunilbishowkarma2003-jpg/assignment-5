@@ -7,7 +7,14 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); /* Background ali blur huncha */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 20px;
+}
 .card {
     background: #fff;
     width: 320px;
@@ -17,17 +24,32 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
-
 .card:hover {
-    transform: translateY(-10px); /* Hover garda mathi sarchha */
+    transform: translateY(-10px);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
 }
-
 #profile-name {
     color: #333;
     font-size: 24px;
     margin-bottom: 5px;
 }
+.button {
+    background: #00d2ff;
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
 
+.button:hover {
+    letter-spacing: 2px;
+    background: #3a7bd5;
+}
 .title {
     color: #007bff;
     font-weight: bold;
@@ -56,7 +78,13 @@ body {
     margin-top: 20px;
     cursor: pointer;
 }
-
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Image round huncha */
+    object-fit: cover;
+    border: 3px solid white;
+}
 .contact-btn:hover {
     background: #0056b3;
 }
